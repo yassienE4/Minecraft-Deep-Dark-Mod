@@ -1,0 +1,4 @@
+// 1.21.1	2024-12-16T21:12:02.858753	Deep Dark Update/Block Loot Tables
+bb3f767507a10b92854c0292470bcae300ddd70d data/deepdarkupdate/loot_table/blocks/pink_garnet_block.json
+9d31354d35a03042664b4f9299a4c9ea7584a4ed data/deepdarkupdate/loot_table/blocks/sculk_deepslate.json
+dea9d980bf01fc0fd72f5eacc38b06e179d78b0c data/deepdarkupdate/loot_table/blocks/sculk_deepslate_brick.json

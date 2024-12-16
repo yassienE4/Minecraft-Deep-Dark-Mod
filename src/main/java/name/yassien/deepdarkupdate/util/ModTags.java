@@ -18,7 +18,7 @@ public class ModTags
 
     public static class Items
     {
-        public static final TagKey<Item> TAG_TEST = createTag("testing tags");
+        public static final TagKey<Item> TAG_TEST = createTag("tag_test");
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(DeepDarkUpdate.MOD_ID, name));
         }
