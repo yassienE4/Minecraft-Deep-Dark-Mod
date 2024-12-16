@@ -19,10 +19,6 @@ public class ModItems
     }
 
 
-
-
-
-
     public static void registerModItems() // this is "outside the class"
     {
         DeepDarkUpdate.LOGGER.info("registering mod items for " + DeepDarkUpdate.MOD_ID);
