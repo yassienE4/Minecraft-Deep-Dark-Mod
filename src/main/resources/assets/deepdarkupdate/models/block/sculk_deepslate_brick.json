@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "deepdarkupdate:block/sculk_deepslate_brick"
+  }
+}

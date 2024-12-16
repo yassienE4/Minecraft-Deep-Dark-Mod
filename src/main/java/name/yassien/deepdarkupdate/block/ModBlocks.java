@@ -18,6 +18,14 @@ public class ModBlocks
             new Block(AbstractBlock.Settings.create().strength(4f)
                     .requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
+    public static final Block SCULK_DEEPSLATE_BRICK = registerBlock("sculk_deepslate_brick",
+            new Block(AbstractBlock.Settings.create().strength(4f)
+                    .requiresTool().sounds(BlockSoundGroup.SCULK_CATALYST)));
+    public static final Block SCULK_DEEPSLATE = registerBlock("sculk_deepslate",
+            new Block(AbstractBlock.Settings.create().strength(4f)
+                    .requiresTool().sounds(BlockSoundGroup.SCULK_CATALYST)));
+
+
 
     private static Block registerBlock(String name, Block block)
     {
@@ -37,6 +45,8 @@ public class ModBlocks
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(ModBlocks.PINK_GARNET_BLOCK);
+            entries.add(ModBlocks.SCULK_DEEPSLATE_BRICK);
+            entries.add(ModBlocks.SCULK_DEEPSLATE);
         });
     }
 }
