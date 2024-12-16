@@ -2,6 +2,7 @@ package name.yassien.deepdarkupdate;
 
 import name.yassien.deepdarkupdate.block.ModBlocks;
 import name.yassien.deepdarkupdate.item.ModItems;
+import name.yassien.deepdarkupdate.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -17,5 +18,7 @@ public class DeepDarkUpdate implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModWorldGeneration.generateModWorldGen();
 	}
 }
