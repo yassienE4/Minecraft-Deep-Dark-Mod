@@ -28,17 +28,17 @@ public class ModDimensions
     public static void bootstrapType(Registerable<DimensionType> context)
     {
         context.register(DARk_DIM_TYPE, new DimensionType(
-                OptionalLong.of(12000), // fixedTime
+                OptionalLong.of(18000), // fixedTime
                 false, // hasSkylight
-                false, // hasCeiling
+                true, // hasCeiling
                 false, // ultraWarm
                 true, // natural
                 1.0, // coordinateScale
                 true, // bedWorks
                 false, // respawnAnchorWorks
-                0, // minY
-                256, // height
-                256, // logicalHeight
+                -64, // minY
+                192, // height
+                192, // logicalHeight
                 BlockTags.INFINIBURN_OVERWORLD, // infiniburn
                 DimensionTypes.OVERWORLD_ID, // effectsLocation
                 1.0f, // ambientLight

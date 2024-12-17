@@ -4,27 +4,33 @@ import name.yassien.deepdarkupdate.block.ModBlocks;
 import name.yassien.deepdarkupdate.world.biome.ModBiomes;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.surfacebuilder.MaterialRules;
 
 public class ModMaterialRules
 {
-    private static final MaterialRules.MaterialRule DIRT = makeStateRule(Blocks.DIRT);
-    private static final MaterialRules.MaterialRule GRASS_BLOCK = makeStateRule(Blocks.GRASS_BLOCK);
-    private static final MaterialRules.MaterialRule RUBY = makeStateRule(ModBlocks.SCULK_DEEPSLATE_BRICK);
-    private static final MaterialRules.MaterialRule RAW_RUBY = makeStateRule(ModBlocks.PINK_GARNET_BLOCK);
+
+    private static final MaterialRules.MaterialRule DEEPSLATE = makeStateRule(Blocks.DEEPSLATE);
+    private static final MaterialRules.MaterialRule SCULK_DEEPSLATE = makeStateRule(ModBlocks.SCULK_DEEPSLATE_BRICK);
+
+    private static final MaterialRules.MaterialRule BEDROCK_CEILING = makeStateRule(Blocks.BEDROCK);
 
     public static MaterialRules.MaterialRule makeRules() {
         MaterialRules.MaterialCondition isAtOrAboveWaterLevel = MaterialRules.water(-1, 0);
 
-        MaterialRules.MaterialRule grassSurface = MaterialRules.sequence(MaterialRules.condition(isAtOrAboveWaterLevel, GRASS_BLOCK), DIRT);
+        MaterialRules.MaterialRule surface = MaterialRules.sequence(MaterialRules.condition(isAtOrAboveWaterLevel, DEEPSLATE), DEEPSLATE);
 
         return MaterialRules.sequence(
                 MaterialRules.sequence(MaterialRules.condition(MaterialRules.biome(ModBiomes.TEST_BIOME),
-                                MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, RAW_RUBY)),
-                        MaterialRules.condition(MaterialRules.STONE_DEPTH_CEILING, RUBY)),
+                                MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, DEEPSLATE)),
+                        MaterialRules.condition(MaterialRules.STONE_DEPTH_CEILING, SCULK_DEEPSLATE)),
 
-                // Default to a grass and dirt surface
-                MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, grassSurface)
+                MaterialRules.sequence(MaterialRules.condition(MaterialRules.not(MaterialRules.verticalGradient("bedrock_roof", YOffset.belowTop(5), YOffset.getTop())), BEDROCK_CEILING)),
+
+
+
+
+                MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, surface)
         );
     }
 
