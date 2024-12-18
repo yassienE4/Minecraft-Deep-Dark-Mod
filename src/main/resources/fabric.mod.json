@@ -23,7 +23,11 @@
 		],
 		"client": [
 			"name.yassien.deepdarkupdate.DeepDarkUpdateClient"
+		],
+		"terrablender": [
+			"name.yassien.deepdarkupdate.world.biome.ModTerrablenderAPI"
 		]
+
 	},
 	"mixins": [
 		"deepdarkupdate.mixins.json"

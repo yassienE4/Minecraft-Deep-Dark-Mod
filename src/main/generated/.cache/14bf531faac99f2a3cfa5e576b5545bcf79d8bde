@@ -1,11 +1,11 @@
-// 1.21.1	2024-12-18T01:00:51.264899	Deep Dark Update/Model Definitions
+// 1.21.1	2024-12-18T03:36:17.444979	Deep Dark Update/Model Definitions
 b045c6ec40fe2e27dbcc7957ef79d1b39ce4df8c assets/deepdarkupdate/blockstates/pink_garnet_block.json
 1475bc31542d7b3c5cd8e03a8919403b5612c305 assets/deepdarkupdate/models/block/pink_garnet_block.json
 f624b85c7c353635090ab4f309342398d3bc38aa assets/deepdarkupdate/models/item/sculk_deepslate_brick.json
 f864fd0875f3c3146b23f4b2adcbb4924e49a953 assets/deepdarkupdate/models/item/pink_garnet_block.json
 7d89c8959af32f14bfb32b303ae03a0a51bd9cd8 assets/deepdarkupdate/blockstates/sculk_deepslate.json
 fabd62b10597d6f94be3b7e52bed0ac1606d74cd assets/deepdarkupdate/models/block/sculk_deepslate.json
-bde0186c83300c4bde0f7335c9af5d78bb6f13e7 assets/deepdarkupdate/models/item/pink_garnet.json
 a367af1017309f6ff16c349fc69ce20bafa57458 assets/deepdarkupdate/models/item/sculk_deepslate.json
+bde0186c83300c4bde0f7335c9af5d78bb6f13e7 assets/deepdarkupdate/models/item/pink_garnet.json
 72e4f39e34306c2ff2fff7fd3c266f84f7f1f87e assets/deepdarkupdate/models/block/sculk_deepslate_brick.json
 2344c822ab86473c0506d0a6a1c325311aa8a62c assets/deepdarkupdate/blockstates/sculk_deepslate_brick.json

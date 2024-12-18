@@ -30,11 +30,6 @@ public class ModBiomes
     }
 
     public static void globalOverworldGeneration(GenerationSettings.LookupBackedBuilder builder) {
-        DefaultBiomeFeatures.addLandCarvers(builder);
-
-
-        DefaultBiomeFeatures.addMineables(builder);
-        DefaultBiomeFeatures.addSprings(builder);
     }
 
     public static Biome testBiome(Registerable<Biome> context) {
@@ -47,12 +42,12 @@ public class ModBiomes
                 new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
                         context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
 
-        biomeBuilder.carver(GenerationStep.Carver.AIR, ConfiguredCarvers.NETHER_CAVE);
+        //biomeBuilder.carver(GenerationStep.Carver.AIR, ConfiguredCarvers.NETHER_CAVE);
 
         globalOverworldGeneration(biomeBuilder);
 
 
-        DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
+        //efaultBiomeFeatures.addDefaultOres(biomeBuilder);
 
         return new Biome.Builder()
                 .precipitation(false)

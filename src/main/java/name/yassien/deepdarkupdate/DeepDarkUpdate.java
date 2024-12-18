@@ -2,6 +2,7 @@ package name.yassien.deepdarkupdate;
 
 import name.yassien.deepdarkupdate.block.ModBlocks;
 import name.yassien.deepdarkupdate.item.ModItems;
+import name.yassien.deepdarkupdate.world.biome.surface.ModMaterialRules;
 import name.yassien.deepdarkupdate.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
@@ -24,7 +25,6 @@ public class DeepDarkUpdate implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModWorldGeneration.generateModWorldGen();
-
 		CustomPortalBuilder.beginPortal()
 				.frameBlock(Blocks.REINFORCED_DEEPSLATE)
 				.lightWithItem(Items.ECHO_SHARD)
