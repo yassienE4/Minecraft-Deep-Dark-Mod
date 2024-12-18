@@ -4,7 +4,7 @@
     "type": "minecraft:noise",
     "settings": {
       "default_block": {
-        "Name": "deepdarkupdate:sculk_deepslate"
+        "Name": "minecraft:deepslate"
       },
       "default_fluid": {
         "Name": "minecraft:air"
@@ -42,8 +42,6 @@
         "type": "minecraft:sequence",
         "sequence": []
       }
-
-
     },
     "biome_source": {
       "type": "minecraft:multi_noise",

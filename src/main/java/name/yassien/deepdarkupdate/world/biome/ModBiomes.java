@@ -46,8 +46,7 @@ public class ModBiomes
 
         globalOverworldGeneration(biomeBuilder);
 
-
-        //efaultBiomeFeatures.addDefaultOres(biomeBuilder);
+        DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
 
         return new Biome.Builder()
                 .precipitation(false)
